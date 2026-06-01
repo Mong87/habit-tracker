@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale= 1.0" />
+        <tittle>
+            Habits Tracker
+        </tittle>
+        <link rel="stylesheet" href="style.css" />
+    </head>
+    <body>
+
+        <div class="app">
+<header class="hero">
+  <div>
+    <p class="eyebrow" id="todayText">Today</p>
+    <h1>Habit Tracker</h1>
+    <p>Build your daily routine, one small habit at a time.</p>
+  </div>
+
+  <div class="hero-badge">
+    Daily Mode
+  </div>
+</header>
+
+                <section class="habit-form">
+      <input type="text" id="habitInput" placeholder="Enter a new habit..." />
+      <button id="addHabitBtn">Add Habit</button>
+    </section>
+
+    <section class="tool-row">
+  <button id="clearAllBtn" class="clear-all-btn">
+    Clear All Habits
+  </button>
+</section>
+
+    <section class="stats-grid">
+  <div class="stat-card">
+    <span>Total Habits</span>
+    <strong id="totalHabits">0</strong>
+  </div>
+
+  <div class="stat-card">
+    <span>Completed</span>
+    <strong id="completedHabits">0</strong>
+  </div>
+
+  <div class="stat-card">
+    <span>Remaining</span>
+    <strong id="remainingHabits">0</strong>
+  </div>
+</section>
+
+            <section class="progress-box">
+                <h2>Today's Progress</h2>
+                <p id="progressText">0% completed</p>
+                <div class="progress-bar">
+                    <div id="progressFill"></div>
+                </div>
+            </section>
+
+<section class="habit-list" id="habitList">
+  <div class="empty-state" id="emptyState">
+    <h3>No habits yet</h3>
+    <p>Start with one small habit. Jangan langsung banyak, nanti malah males sendiri.</p>
+  </div>
+</section>
+        </div>
+
+        <script src="script.js"></script>
+    </body>
+</html>
